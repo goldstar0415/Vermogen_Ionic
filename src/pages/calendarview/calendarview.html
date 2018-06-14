@@ -1,0 +1,60 @@
+<!--
+  Generated template for the CalendarviewPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header class="navbar-properties">
+
+    <ion-navbar>
+    <ion-title>New Appointment</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding style="    background: #1e1e1e;">
+<div><owl-date-time [min] ="date" [(ngModel)]="input10Moment" [inline]="true" [inputId]="'input10'" (click)="getAppointmentTimeSlots()">
+	<div style="position:relative;top: 380px;">
+		<!-- <h3 class="list-title-properties">Choose a slot: {{getTotalTimeSlots}}</h3> -->
+		<h3 class="list-title-properties">Choose a slot: {{selectedCentreName}}</h3>
+		<ion-row>
+	      <ion-col col-4>
+	        <div><button [attr.disabled]="!checkButton?'':null" ion-button full (click)="selectTimeSlot('10:00:00', '10:00 AM')">10:00 AM({{slotsLeft}})</button> </div>
+	      </ion-col>
+	      <ion-col col-4>
+	        <div><button  [attr.disabled] ="!checkButton1?'':null" ion-button full (click)="selectTimeSlot('11:00:00', '11:00 AM')">11:00 AM({{slotsLeft1}})</button> </div>
+	      </ion-col>
+	      <ion-col col-4>
+	        <div><button  [attr.disabled] ="!checkButton2?'':null" ion-button full (click)="selectTimeSlot('12:00:00','12:00 PM')">12:00 PM({{slotsLeft2}})</button> </div>
+	      </ion-col>
+	    </ion-row>
+	    <ion-row>
+	      <ion-col col-4>
+	        <div><button [attr.disabled] ="!checkButton3?'':null" ion-button full (click)="selectTimeSlot('13:00:00', '1:00 PM')">1:00 PM({{slotsLeft3}})</button> </div>
+	      </ion-col>
+	      <ion-col col-4>
+	        <div><button [attr.disabled] ="!checkButton4?'':null" ion-button full (click)="selectTimeSlot('14:00:00', '2:00 PM')">2:00 PM({{slotsLeft4}})</button> </div>
+	      </ion-col>
+	      <ion-col col-4>
+	        <div><button [attr.disabled] ="!checkButton5?'':null" ion-button full (click)="selectTimeSlot('15:00:00', '3:00 PM')">3:00 PM({{slotsLeft5}})</button> </div>
+	      </ion-col>
+	    </ion-row>
+	    <ion-row>
+	      <ion-col col-4>
+	        <div><button [attr.disabled] ="!checkButton6?'':null" ion-button full (click)="selectTimeSlot('16:00:00', '4:00 PM')">4:00 PM({{slotsLeft6}})</button> </div>
+	      </ion-col>
+	      <ion-col col-4>
+	        <div><button [attr.disabled] ="!checkButton7?'':null" ion-button full (click)="selectTimeSlot('17:00:00', '5:00 PM')">5:00 PM({{slotsLeft7}})</button> </div>
+	      </ion-col>
+	      <ion-col col-4>
+	      </ion-col>
+	    </ion-row>
+	</div>
+</owl-date-time></div>
+
+<!-- 	<ion-calendar #calendar></ion-calendar> -->
+	<!-- <button (click)="showCalendar()">Show Calendar</button> -->
+
+
+</ion-content>

@@ -1,0 +1,78 @@
+<!--
+  Generated template for the AppointmentSummaryPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header class="appointment-summary-header">
+
+  <ion-navbar>
+    <ion-title>New Appointment Summary</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="appointment-summary" padding>
+	<div class="login-box">
+		
+		<ion-item style="width:100%;background-color: rgba(255, 255, 255, 0.10)!important;border:0px!important;">
+			<div style="margin-left:16px;">
+				<h1 class="text-header">
+					{{displayYearDay}}<span class="span-properties" style="padding-left: 8px;">({{displayWeekDay}})</span>
+				</h1>
+				<h3 class="text-header3">
+					{{displayTime}}
+				</h3>
+
+			</div>
+		</ion-item>
+
+	</div>
+	<ion-list class="ion-list-border ion-list-space">
+	    <ion-item-group>
+	      <ion-item class="item-group-properties">
+	        <ion-label class="label-item-properties"><img src="assets/Images/home/icon_car.png" style="float:left;font-family: 'Lato', sans-serif;font-weight: 400;margin-right: 8px;"/>
+	        	<div class="headline-properties">{{vehicleNumber}}</div>
+	    	</ion-label>
+	      </ion-item>
+
+	       <ion-item class="item-group-properties">
+	        <ion-label class="label-item-properties"><img src="assets/Images/home/icon_phone.png" style="float:left;font-family: 'Lato', sans-serif;font-weight: 400;margin-right: 8px;"/>
+	        	<div class="headline-properties">{{mobileNumber}}</div>
+	    	</ion-label>
+	      </ion-item>
+	    </ion-item-group>
+	</ion-list>
+
+	<ion-list class="item-space">
+
+		<ion-item class="item-properties">
+		
+			<h1 class="text-item">
+				{{serviceCentreName}}
+			</h1>
+			
+			<h3 class="list-text-properties">
+				{{serviceAddress}}
+			</h3>
+
+		</ion-item>
+	</ion-list>
+
+	<ion-row>
+		<ion-col>
+			<ion-list inset class="custom-value">
+				<ion-item style="width:100%;" class="ion-item-label">
+					<!-- <ion-label class="label-properties" fixed>
+						
+					</ion-label> -->
+					<ion-input  style="float:left;" type="text" [(ngModel)]="remarksData" placeholder="Remarks (optional, for personal use )" ></ion-input>
+					
+				</ion-item>
+			</ion-list>
+			<button class="button-properties" ion-button block (click)="confirmAppointment()">Confirm Booking</button>
+		</ion-col>
+	</ion-row>
+
+</ion-content>

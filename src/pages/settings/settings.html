@@ -1,0 +1,64 @@
+<!--
+  Generated template for the SettingsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+
+<ion-content class="setting-details" padding>
+
+	<h1 class="list-title-properties">Settings</h1>
+	<ion-list class="item-space">
+
+	<ion-item class="item-properties">
+		<ion-label class="label-properties" >
+			<ion-toggle value="foo" checked="true" style="float:right;font-family: 'Lato', sans-serif;font-weight: 400;margin-left: 8px;color:rgba(255, 255, 255, 0.70);"></ion-toggle>
+			<div class="headline-item-properties">
+				<h1 class="text-item">
+					Notifications
+				</h1>
+				Allow us to send you news and updates
+			</div>
+		</ion-label>
+	</ion-item>
+	
+	</ion-list>
+
+	<ion-list class="item-space">
+
+	
+	<ion-item class="item-properties">
+		<ion-label class="label-properties" >
+			<ion-toggle value="foo" checked="true" style="float:right;font-family: 'Lato', sans-serif;font-weight: 400;margin-left: 8px;color:rgba(255, 255, 255, 0.70);"></ion-toggle>
+			<div class="headline-item-properties">
+
+				<h1 class="text-item">
+					Sound
+				</h1>
+				Play Sound on incoming notifications
+			</div>
+		</ion-label>
+	</ion-item>
+	
+	</ion-list>
+
+	<ion-list class="item-space">
+
+
+	<ion-item class="item-properties">
+		<ion-label class="label-properties" >
+			<button class="button-item-properties" ion-button block (click)="checkUpdate()" style="float:right;font-family: 'Lato', sans-serif;font-weight: 400;margin-left: 8px;width:40%">Update</button>			
+			<div class="headline-item-properties" style="width: 40% !important;">
+				<h1 class="text-item">
+					Version
+				</h1>
+				{{appVer}}
+			</div>
+		</ion-label>
+	</ion-item>
+	
+	</ion-list>
+	<button *ngIf="viewData!= '0'" class="button-properties" ion-button block (click)="SignOut()">Sign Out</button>
+</ion-content>

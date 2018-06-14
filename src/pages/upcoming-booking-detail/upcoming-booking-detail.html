@@ -1,0 +1,89 @@
+<!--
+  Generated template for the EditAppointmentPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title><img src="assets/Images/IconButton/@1x/button_edit.png" style="float:right;font-family: 'Lato', sans-serif;font-weight: 400;margin-right: 8px;" (click)="presentConfirm()"/></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="edit-appointment" padding>
+	<div class="login-box">
+		
+		<ion-item style="width:100%;background-color: rgba(255, 255, 255, 0.10)!important;border:0px!important;">
+			<div style="margin-left:16px;">
+				<h1 class="text-header">
+					{{displayYearData}} <span class="span-properties"  style="font-size: 22px;padding-left: 8px;color:rgba(255, 255, 255, 0.70);">({{displayWeekData}})</span>
+				</h1>
+				<h3 class="text-header3">
+					{{displayTimeData}}
+				</h3>
+
+			</div>
+		</ion-item>
+
+	</div>
+	<ion-list class="ion-list-border ion-list-space">
+	    <ion-item-group>
+	      <ion-item class="item-group-properties">
+	        <ion-label class="label-item-properties"><img src="assets/Images/home/icon_car.png" style="float:left;font-family: 'Lato', sans-serif;font-weight: 400;margin-right: 8px;"/>
+	        	<div class="headline-properties">{{displayVehicleNumber}}</div>
+	    	</ion-label>
+	      </ion-item>
+
+	       <ion-item class="item-group-properties" style="margin-bottom: 0px!important;">
+	        <ion-label class="label-item-properties"><img src="assets/Images/home/icon_phone.png" style="float:left;font-family: 'Lato', sans-serif;font-weight: 400;margin-right: 8px;"/>
+	        	<div class="headline-properties">{{displayMobileNumber}}</div>
+	    	</ion-label>
+	      </ion-item>
+	      <ion-item class="item-properties">
+		
+	      <h3 class="list-text-properties">
+				Remarks
+			</h3>
+
+			<h3 class="list-text-properties">
+				{{displayRemarks}}
+			</h3>
+
+	     </ion-item>
+
+	    </ion-item-group>
+	</ion-list>
+
+	<ion-list class="item-space">
+
+		<ion-item class="item-properties">
+		
+			<h1 class="text-item">
+				{{displayServiceCentreName}}
+			</h1>
+		</ion-item>
+	      <ion-item class="item-properties">
+	        <ion-label class="label-properties" >
+	        	<img src="assets/Images/IconButton/@2x/button_location@2x.png" style="float:right;font-family: 'Lato', sans-serif;font-weight: 400;margin-left: 8px; margin-top: 12px;   height: 40px;width: 40px;" (click)="openLocation(selectedCntreLat, selectedCntreLng, displayServiceCentreName)"/>
+	        	<div class="headline-item-properties">{{displayServiceCentreAddress}}</div>
+	    	</ion-label>
+	      </ion-item>
+
+	      <!-- <ion-item class="item-properties">
+	        <ion-label class="label-properties">
+	        <img src="assets/Images/IconButton/@2x/button_call@2x.png" style="float:right;font-family: 'Lato', sans-serif;font-weight: 400;margin-left: 8px; height: 40px;width: 40px;"/>
+	        	<div class="headline-item-properties">+65 1234 5678</div>
+	    	</ion-label>
+	      </ion-item> -->
+
+			
+			
+			
+
+		
+	</ion-list>
+
+</ion-content>

@@ -1,0 +1,47 @@
+<!--
+  Generated template for the NewappointmentPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header class="navbar-properties">
+
+  <ion-navbar>
+    <ion-title class="title-properties">New Appointment</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="new-appointment">
+
+	<h3 class="list-title-properties">Choose a service centre:</h3>
+	<ion-list *ngFor="let centreListValue of getData.ServiceCentres">
+
+		<ion-item class="item-properties" (click)="checkCalendar(centreListValue.ResourceID, centreListValue.ResourceName, centreListValue.Address)">
+		
+			<h1 class="text-header">
+				{{centreListValue.ResourceName}}
+			</h1>
+			
+			<h3 class="list-text-properties">
+				{{centreListValue.Address}}
+			</h3>
+
+		
+		</ion-item>
+		<!-- <ion-item class="item-properties">
+		
+			<h1 class="text-header">
+				Bulkit Batok Center
+			</h1>
+			
+			<h3 class="list-text-properties">
+				1 Bulkit Batok Crescent #04-54/55 Wcega Plaza 658054
+			</h3>
+
+		
+		</ion-item> -->
+	</ion-list>
+
+</ion-content>

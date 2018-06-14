@@ -1,0 +1,157 @@
+<!--
+  Generated template for the InsurancePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Insurance</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="insurance-content" padding>
+
+<ion-row >
+	<ion-col>
+		<h1 class="text-properties">
+			Insurance Quotation!
+		</h1>
+
+
+		 <ion-list inset class="custom-value">
+			<ion-item style="width:100%;">
+				<ion-label class="label-properties" fixed>
+					<img src="assets/Images/home/icon_car.png" style="float:left;font-family: 'Lato', sans-serif;font-weight: 400;"/>
+
+				</ion-label>
+				<ion-input  style="float:left;" type="text" placeholder="Name" [(ngModel)]="registerCredentials.insurerName"></ion-input>
+			</ion-item>
+			
+			<ion-item style="width:100%;">
+				<ion-label class="label-properties" fixed>
+					<img src="assets/Images/home/icon_phone.png" style="float:left;font-family: 'Lato', sans-serif;font-weight: 400;"/>
+
+				</ion-label>
+				<ion-input  style="float:left;" type="text" placeholder="Contact Number" [(ngModel)]="registerCredentials.contactNumber"></ion-input>
+			</ion-item>
+			<ion-item style="width:100%;">
+				<ion-label class="label-properties" fixed>
+					<img src="assets/Images/home/icon_email.png" style="float:left;font-family: 'Lato', sans-serif;font-weight: 400;"/>
+				</ion-label>
+				
+				<int-phone-prefix [(ngModel)]="phoneNumber"></int-phone-prefix>
+				<ion-input  style="float:left;" type="text" placeholder="Email" [(ngModel)]="registerCredentials.email"></ion-input>
+			</ion-item> 
+			<ion-item style="width:100%;">
+				<ion-label class="label-properties" fixed>
+					<img src="assets/Images/home/icon_car.png" style="float:left;font-family: 'Lato', sans-serif;font-weight: 400;"/>
+
+				</ion-label>
+				<ion-input  style="float:left;" type="text" placeholder="Current insurance company" [(ngModel)]="registerCredentials.company"></ion-input>
+			</ion-item>
+
+			
+				<!-- <ion-label class="label-properties" fixed>
+						
+						<img src="assets/Images/home/icon_car.png" style="float:left;font-family: 'Lato', sans-serif;font-weight: 400;"/>
+						
+
+					</ion-label> -->
+					<div style="width:100%;" class="div-properties">
+						<ion-label style="width:16%;float:left;">
+							<img src="assets/Images/home/icon_car.png" style="float:left;font-family: 'Lato', sans-serif;font-weight: 400;"/>
+						</ion-label>
+					<ion-item style="width:80%;margin-bottom: 0px !important;border: 0px!important;">
+						
+						
+							<ion-label stacked style="font-size: 17px!important;color: rgba(255, 255, 255, 0.50);font-family: 'Lato', sans-serif;font-weight: 400;">Vehicle make & model</ion-label>
+							
+
+							<ion-input  style="float:left;" type="text" placeholder="(eg: Toyota Camry 2.4)" [(ngModel)]="registerCredentials.makeModel">
+							</ion-input>
+						
+
+
+						
+					</ion-item>
+				</div>
+
+			<ion-item style="width:100%;">
+				<ion-label class="label-properties" fixed>
+					<img src="assets/Images/home/icon_car.png" style="float:left;font-family: 'Lato', sans-serif;font-weight: 400;"/>
+
+				</ion-label>
+				<!-- <ion-input  style="float:left;" type="text" placeholder="Any claims for past 3 yrs" disabled="true"></ion-input> -->
+				<ion-select [(ngModel)]="registerCredentials.claims" interface="popover" >
+					<ion-option value="default" disabled="true">Any claims for past 3 yrs</ion-option>
+				    <ion-option value="true">Yes</ion-option>
+				    <ion-option value="false">No</ion-option>
+				  </ion-select>
+			</ion-item>
+			<ion-item style="width:100%;">
+				<ion-label class="label-properties" fixed>
+					<img src="assets/Images/home/icon_phone.png" style="float:left;font-family: 'Lato', sans-serif;font-weight: 400;"/>
+				</ion-label>
+				
+				<ion-input  style="float:left;" type="text" placeholder="Car year of manufacturing" [(ngModel)]="registerCredentials.yearOfManf"></ion-input>
+				
+			</ion-item>
+
+	<ion-item class="item-properties" >
+		        <ion-label class="label-properties" style="min-width:100%!important;min-height: 64px!important;">
+		        	<button class="button-properties" ion-button block style="width:30%!important;float:right;font-family:'Lato', sans-serif;font-weight:400;margin: 6px 8px 0px 0px!important;" (click)="presentActionSheet()">
+						Upload
+					</button>
+					<div class="headline-item-properties" style="width:65%!important;float:right">Car log card</div>
+		    	</ion-label>
+
+		        	
+		    	
+	      </ion-item>
+
+
+
+	      <ion-item *ngFor="let photo of photos; let id = index">
+	      <!-- <img [src]="{{pathForImage(lastImage)}}" style="width: 100%" [hidden]="lastImage === null"> -->
+	              <ion-card class="block">
+	                <ion-icon name="trash" class="deleteIcon" (click)="deletePhoto(id)"></ion-icon>
+	                <img [src]="photo" />
+	              </ion-card>
+	      </ion-item>
+
+			<!-- <ion-item style="width:100%;">
+				<ion-label class="label-properties" fixed>
+					
+					
+				</ion-label>
+				
+				<int-phone-prefix [(ngModel)]="phoneNumber"></int-phone-prefix>
+				<ion-input  style="float:left;" type="text" placeholder="Car log card" [(ngModel)]="registerCredentials.yearOfManf"></ion-input>
+			</ion-item>  -->
+
+			
+
+		</ion-list>
+
+		<!-- <div class="row" style="width:100%;padding: 0px;!important;border: 1px solid rgba(255, 255, 255, 0.50)!important;height: 48px!important;" >
+			<ion-label class="label-properties" fixed>
+				<img src="assets/Images/home/icon_phone.png" style="float:left;font-family: 'Lato', sans-serif;font-weight: 400;"/>
+			</ion-label>
+			<div class="col" style="padding:0px!important;">
+				<int-phone-prefix style="height: 48px;background: transparent;border: 0px;width: 80%;font-size: 15px;color: rgba(255, 255, 255, 0.50);" [(ngModel)]="registerCredentials.mobileNumber"  placeholder="Mobile No." ></int-phone-prefix>
+			</div>
+		</div> -->
+
+		<button class="button-properties" ion-button block (click)="checkSubmitInsurance()">Submit</button> 
+		<!-- page2 -->
+		 
+	</ion-col>
+</ion-row>
+
+</ion-content>
+
+

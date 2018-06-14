@@ -1,0 +1,224 @@
+
+
+page-calendarview {
+	.owl-calendar[_ngcontent-c1] table[_ngcontent-c1] {
+	    width: 104%!important;
+	    border-collapse: collapse!important;
+	    background: rgb(53, 53, 53)!important;
+	    margin-left: -6px!important;
+	}
+	.owl-calendar-wrapper[_ngcontent-c1], .owl-timer-wrapper[_ngcontent-c1] {
+	    
+	    width: 100%!important;
+	        background: rgb(53, 53, 53)!important;
+	        margin-top: -16px!important;
+    	height: 380px!important;
+	}
+
+	
+
+	.owl-calendar-control .owl-calendar-controlContent .month-control {
+	    font-size: 15px!important;
+	    margin-right: 12.8px!important;
+	    margin-right: .8rem!important;
+	    font-family: 'Lato', sans-serif!important;
+		 font-weight: 400!important;
+	}
+	.owl-calendar-control .owl-calendar-controlContent .year-control {
+	    font-size: 15px!important;
+	    font-family: 'Lato', sans-serif!important;
+		 font-weight: 400!important;
+		 font-style: normal!important;
+		 color : #fff!important;
+	}
+
+	.owl-state-default {
+	    border: 0px;
+	    background: rgba(255, 255, 255, 0.10)!important;
+	    color: #fff;
+	    left: -16px!important;
+	    top: -252px!important;
+	}
+
+	.owl-dateTime.owl-dateTime-inline .owl-dateTime-dialog {
+	    
+	    z-index: auto!important;
+	}
+	
+	.owl-calendar-wrapper[_ngcontent-c1], .owl-timer-wrapper[_ngcontent-c1] {
+	    position: relative;
+	        padding: 16px 4px 0px 4px!important;
+	}
+	.owl-weekdays th.owl-weekday {
+	    height: 1em!important;
+	    line-height: 1em!important;
+	    text-align: left!important;
+	    font-size: .7em!important;
+	    color: #999!important;
+	    padding-left: 20px!important;
+	    /* margin-left: 10px; */
+	}
+
+	.owl-calendar[_ngcontent-c1] tbody[_ngcontent-c1] td[_ngcontent-c1] a[_ngcontent-c1] {
+	    display: block!important;
+	    width: 100%!important;
+	    height: 100%!important;
+	    text-decoration: none!important;
+	    color: inherit!important;
+	    padding: 10px!important;
+	}
+
+	.owl-calendar-control[_ngcontent-c1] {
+	    display: -webkit-box!important;
+	    display: -webkit-flex!important;
+	    display: -moz-box!important;
+	    display: -ms-flexbox!important;
+	    display: flex!important;
+	    -webkit-justify-content: space-around!important;
+	    -ms-flex-pack: distribute!important;
+	    justify-content: space-around!important;
+	    width: 100%!important;
+	    height: 48px!important;
+	}
+
+	 .title-properties {
+	  color: #fff;
+	 	font-size: 22px!important;
+		 font-family: 'Lato', sans-serif!important;
+		 font-weight: 700!important;
+	 }
+
+	 
+
+	 .navbar-properties {
+		
+		 color: #fff;
+		 box-shadow: 0px 4px 8px 2px rgba(0,0,0,1)!important;
+	}
+
+	.toolbar-background-ios {
+	    background: rgba(255, 255, 255, 0.10);
+	}
+	.toolbar-background-md {
+	    background: rgba(255, 255, 255, 0.10);
+	}
+
+
+	.toolbar-ios ion-title {
+	    left: 0;
+	    top: 0;
+	    padding: 0px;
+	    position: absolute;
+	    width: 100%;
+	    height: 100%;
+	    -webkit-transform: translateZ(0);
+	    transform: translateZ(0);
+	    pointer-events: none;
+	    min-height: 100px !important;
+	}
+
+	.toolbar-md ion-title {
+	    left: 0;
+	    top: 0;
+	    padding: 0px;
+	    position: absolute;
+	    width: 100%;
+	    height: 100%;
+	    -webkit-transform: translateZ(0);
+	    transform: translateZ(0);
+	    min-height: 100px !important;
+	    pointer-events: none;
+	}
+
+	.toolbar-title-ios {
+	    text-align: center;
+	    font-size: 15px!important;
+		 font-family: 'Lato', sans-serif!important;
+		 font-weight: 700!important;
+	    color: #fff;
+	    pointer-events: auto;
+	}
+
+	.toolbar-title-md {
+	    text-align: center;
+	    font-size: 15px!important;
+		 font-family: 'Lato', sans-serif!important;
+		 font-weight: 700!important;
+	    color: #fff;
+	    pointer-events: auto;
+	}
+
+	.scroll-content {
+	    margin-top: 100px !important;
+        background: none;
+        border: 0px !important;
+	}
+
+	ion-navbar.toolbar {
+		box-shadow: 0px 4px 8px 2px rgba(0,0,0,1)!important;
+		min-height: 100px !important;
+	}
+
+	.owl-timer-wrapper[_ngcontent-c1] {
+	    display: none!important;
+	}
+
+	.button-ios {
+	    color: #fff;
+	    margin: 0.4rem 0.2rem;
+	    padding: 0 1em;
+	    border-radius: 3px!important;
+	    height: 48px!important;
+	    font-size: 15px;
+	    line-height: 20px;
+	    background-color: rgba(255, 255, 255, 0.10)!important;
+	    box-shadow: 0px 4px 8px 2px rgba(0,0,0,0.75)!important;
+	    font-family: 'Lato', sans-serif!important;
+	    font-weight: 700!important;
+	    letter-spacing: 1px;
+	}
+	.button-md {
+	    color: #fff;
+	    margin: 0.4rem 0.2rem;
+	    padding: 0 1em;
+	    border-radius: 3px!important;
+	    height: 48px!important;
+	    font-size: 15px;
+	    line-height: 20px;
+	    background-color: rgba(255, 255, 255, 0.10)!important;
+	    box-shadow: 0px 4px 8px 2px rgba(0,0,0,0.75)!important;
+	    font-family: 'Lato', sans-serif!important;
+	    font-weight: 700!important;
+	    letter-spacing: 1px;
+	}
+
+	button[disabled], [ion-button][disabled] {
+		box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75)!important;
+	}
+
+	.list-title-properties {
+		font-size: 22px!important;
+	    font-family: 'Lato', sans-serif;
+	    font-weight: 700;
+	    letter-spacing: 1px;
+		color:rgba(255, 255, 255, 1)!important;
+		line-height: 22px;
+		margin-bottom:16px!important;
+		margin-top:32px!important;
+		
+  	}
+
+  	.owl-timer-wrapper[_ngcontent-c1] {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: none;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+}

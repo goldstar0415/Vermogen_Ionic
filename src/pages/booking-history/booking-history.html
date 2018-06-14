@@ -1,0 +1,58 @@
+<!--
+  Generated template for the BookingHistoryPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Booking History</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="booking-history" padding>
+<div class="login-box"  >
+	<!-- <div *ngIf="getbookingHistoryData.length==0">
+		<ion-item class="item-properties">
+			<div class="headline-item-properties">No Booking History</div>
+		</ion-item>
+	</div> -->
+	<ion-list *ngFor="let bookingHistoryDetails of getbookingHistoryData.AppointmentHistory" >
+		<ion-item style="width:100%;background-color: rgba(255, 255, 255, 0.10)!important;border:0px!important;" (click)="editAppointment(bookingHistoryDetails)">
+			
+			<div style="margin-left:16px;">
+				<h1 class="text-header">
+					{{bookingHistoryDetails.date}} <span class="span-properties"  style="font-size: 22px;padding-left: 8px;color:rgba(255, 255, 255, 0.70);">({{bookingHistoryDetails.dayofweek}})</span>
+				</h1>
+				<h3 class="text-header3">
+					{{bookingHistoryDetails.time}}
+				</h3>
+
+			</div>
+
+		</ion-item>
+	</ion-list>
+	
+	
+	</div>
+	<!-- <div class="margin-space login-box">
+	
+	<ion-item style="width:100%;background-color: rgba(255, 255, 255, 0.10)!important;border:0px!important;">
+		<div style="margin-left:16px;">
+			<h1 class="text-header">
+				28 Oct, 2017 <span class="span-properties"  style="font-size: 22px;padding-left: 8px;color:rgba(255, 255, 255, 0.70);">(Sat)</span>
+			</h1>
+			<h3 class="text-header3">
+				12:00 PM
+			</h3>
+
+		</div>
+
+	</ion-item>
+	</div> -->
+
+
+</ion-content>

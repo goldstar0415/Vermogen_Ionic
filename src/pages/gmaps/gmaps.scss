@@ -1,0 +1,80 @@
+
+
+
+	
+ 
+    page-gmaps {
+
+    	.toolbar-background-ios {
+    	    background: rgba(255, 255, 255, 0.10)!important;
+    	}
+    	.toolbar-background-md {
+    	    background: rgba(255, 255, 255, 0.10)!important;
+    	}
+
+    	.toolbar-title-ios {
+    	    text-align: center;
+    	    font-size: 18px!important;
+    		 font-family: 'Lato', sans-serif!important;
+    		 font-weight: 700!important;
+    	    color: #fff;
+    	    pointer-events: auto;
+    	}
+
+    	.toolbar-title-md {
+    	    text-align: center;
+    	    font-size: 18px!important;
+    		 font-family: 'Lato', sans-serif!important;
+    		 font-weight: 700!important;
+    	    color: #fff;
+    	    pointer-events: auto;
+    	}
+
+    	.toolbar-ios ion-title {
+    	    left: 0;
+    	    top: 15px;
+    	    padding: 0px;
+    	    position: absolute;
+    	    width: 100%;
+    	    height: 100%;
+    	    -webkit-transform: translateZ(0);
+    	    transform: translateZ(0);
+    	    pointer-events: none;
+    	}
+
+    	.toolbar-md ion-title {
+    	    left: 0;
+    	    top: 0;
+    	    padding: 0px;
+    	    position: absolute;
+    	    width: 100%;
+    	    height: 100%;
+    	    -webkit-transform: translateZ(0);
+    	    transform: translateZ(0);
+    	    pointer-events: none;
+    	}
+
+        .scroll-content {
+            margin-top:100px!important;
+        }
+
+        ion-navbar.toolbar {
+            
+            min-height: 100px !important;
+        }
+
+ 
+      .scroll {
+        height: 100%
+      }
+ 
+      #map {
+        width: 100%;
+        height: 100%;
+      }
+
+      .mapDiv {
+      	background: #1E1E1E;
+      }
+ 
+    }

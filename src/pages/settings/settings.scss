@@ -1,0 +1,198 @@
+page-settings {
+
+	.toolbar-background-ios {
+	    background: rgba(255, 255, 255, 0.10);
+	}
+	.toolbar-background-md {
+	    background: rgba(255, 255, 255, 0.10);
+	}
+	.toolbar-title-ios {
+	    text-align: center;
+	    font-size: 18px!important;
+		 font-family: 'Lato', sans-serif!important;
+		 font-weight: 700!important;
+	    color: #fff;
+	    pointer-events: auto;
+	}
+
+	.toolbar-title-md {
+	    text-align: center;
+	    font-size: 18px!important;
+		 font-family: 'Lato', sans-serif!important;
+		 font-weight: 700!important;
+	    color: #fff;
+	    pointer-events: auto;
+	}
+
+	.toolbar-ios ion-title {
+	    left: 0;
+	    top: 0;
+	    padding: 0px;
+	    position: absolute;
+	    width: 100%;
+	    height: 100%;
+	    -webkit-transform: translateZ(0);
+	    transform: translateZ(0);
+	    pointer-events: none;
+	}
+
+	.toolbar-md ion-title {
+	    left: 0;
+	    top: 0;
+	    padding: 0px;
+	    position: absolute;
+	    width: 100%;
+	    height: 100%;
+	    -webkit-transform: translateZ(0);
+	    transform: translateZ(0);
+	    pointer-events: none;
+	}
+
+	.setting-details {
+
+		background: #1E1E1E;
+
+		.label-properties {
+			margin: 0px;
+			min-width: 48px!important;
+			width: 100%;
+			float: left;
+			padding: 0px!important;
+			min-width: 100%;
+		}
+
+		.headline-item-properties {
+			margin-top: 0px;
+			font-size: 15px;
+			font-family: "Lato", sans-serif !important;
+			font-weight: 400 !important;
+			letter-spacing: 1px;
+			color: #FFFFFF;
+			line-height: 20px;
+			width: 84%!important;
+			white-space: initial!important;
+		}
+
+		.item-properties {
+			margin-bottom: 8px!important;
+			border : 0px!important;
+		}
+
+		ion-item {
+
+			padding-left: 0px!important;
+			font-size: 17px!important;
+			margin-bottom: 16px!important;;
+			border: 1px solid rgba(255, 255, 255, 0.50)!important;
+			box-shadow: none !important;
+			color: rgba(255, 255, 255, 0.50);
+			background-color: #1E1E1E;
+			font-family: 'Lato', sans-serif!important;
+			font-weight: 400!important;
+		 }
+
+		 .text-item {
+		 	color:#fff;
+			font-size: 17px;
+			letter-spacing: 1px;
+			font-family: 'Lato', sans-serif;
+    		font-weight: 700;
+    		padding-bottom: 8px;
+		 }
+
+		.item-md.item-block .item-inner {
+			padding-right: 0px!important;
+			border-bottom : 0px!important;
+		}
+
+		.item-ios.item-block .item-inner {
+			
+			padding-right: 0px!important;
+			border-bottom: 0px!important;
+		}
+
+		.button-item-properties {
+			border-radius: 3px!important;
+			height: 48px!important;
+			font-size: 15px;
+			line-height: 20px;
+			background-color: rgba(255, 255, 255, 0.10)!important;
+			box-shadow: 0px 4px 8px 2px rgba(0,0,0,0.75)!important;
+			font-family: 'Lato', sans-serif!important;
+			font-weight: 700!important;
+			letter-spacing: 1px;
+		 }
+
+	 	.list-title-properties {
+	 		font-size: 28px!important;
+	 	    font-family: 'Lato', sans-serif;
+	 	    font-weight: 700;
+	 	    letter-spacing: 1px;
+	 		color:rgba(255, 255, 255, 1)!important;
+	 		line-height: 28px;
+	 		margin-bottom:24px!important;
+	 		margin-top:48px!important;
+	 		
+	   	}
+
+	   	.list-ios {
+	   	    margin: 0px -16px 0px -16px;
+	   	    border-bottom: 1px solid rgba(255, 255, 255, 0.5) !important;
+	   	    padding: 16px;
+	   	}
+	   	.list-md {
+	   	    margin: 0px -16px 0px -16px;
+	   	    border-bottom: 1px solid rgba(255, 255, 255, 0.5) !important;
+	   	    padding: 16px;
+	   	}
+
+	   	.button-properties {
+			margin-top: 24px!important;
+			border-radius: 3px!important;
+			height: 48px!important;
+			font-size: 15px;
+			line-height: 20px;
+			background-color: rgba(255, 255, 255, 0.10)!important;
+			box-shadow: 0px 4px 8px 2px rgba(0,0,0,0.75)!important;
+			font-family: 'Lato', sans-serif!important;
+			font-weight: 700!important;
+			letter-spacing: 1px;
+		 }
+
+		 .toggle-ios.toggle-checked .toggle-icon {
+		     background-color: #B4CD34!important;
+		 }
+
+		 .toggle-md.toggle-checked .toggle-icon {
+		     background-color: #B4CD34!important;
+		 }
+
+		 .toggle-ios .toggle-icon::before {
+		     
+		     background-color: #1e1e1e;
+		     
+		 }
+
+		 .toggle-md .toggle-icon {
+		     border-radius: 14px;
+		     position: relative;
+		     display: block;
+		     width: 100%;
+		     height: 100%;
+		     background-color: rgba(255, 255, 255, 0.10);
+		     -webkit-transition: background-color 300ms;
+		     transition: background-color 300ms;
+		     pointer-events: none;
+		 }
+
+		 .toggle-md.toggle-checked .toggle-inner {
+			-webkit-transform: translate3d(16px, 0, 0);
+			transform: translate3d(16px, 0, 0);
+			background-color: #fff;
+		 }
+
+		 
+
+		 
+	}
+}

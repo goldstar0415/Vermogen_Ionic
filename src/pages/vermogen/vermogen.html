@@ -1,0 +1,150 @@
+<!--
+  Generated template for the VermogenPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+
+  <ion-navbar>
+    <ion-title>
+    <div padding>
+      <ion-segment [(ngModel)]="tabName">
+        <ion-segment-button style="border: 1px solid transparent;border-radius: 28px;color: rgba(255, 255, 255, 0.50);left: 17px;" value="about">
+          About Us
+        </ion-segment-button>
+        <ion-segment-button style="border: 1px solid transparent;border-radius: 28px;color: rgba(255, 255, 255, 0.50);left: -17px;" value="contact">
+          Our Centres
+        </ion-segment-button>
+      </ion-segment>
+    </div>
+
+	</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="vermogen-details" padding>
+<div [ngSwitch]="tabName">
+    <ion-list class="item-space" *ngSwitchCase="'about'">
+
+    <ion-row style="    margin-top: 64px;margin-bottom: 64px;">
+    	<ion-col text-center>
+    		<img src="assets/Images/vermogen_logo@3x.png" width="300">
+    	</ion-col>
+    </ion-row>
+    <ion-row style=" padding: 0 8px;   ">
+    	<ion-col>
+
+    	<!-- <ion-list *ngIf="getData.aboutUsData.length==0">
+    		<ion-item class="item-properties">
+    			<div class="headline-item-properties">No Company Data</div>
+    		</ion-item>
+    	</ion-list> -->
+
+    	<ion-list class="item-space">
+
+
+    	      <ion-item class="item-properties" >
+    	        <ion-label class="label-properties" >
+    	        	<h1 class="text-item">
+    				Company Overview
+    			</h1>
+    	        	<div class="headline-item-properties">{{aboutUsData.CompanyOverview}}</div>
+    	    	</ion-label>
+    	      </ion-item>
+
+			<ion-item class="item-properties" style=" margin-top: 24px;   ">
+				<ion-label class="label-properties" >
+					<h1 class="text-item">
+						Products
+					</h1>
+					<div class="headline-item-properties">{{aboutUsData.Products}}</div>
+				</ion-label>
+			</ion-item>
+
+    			
+			<ion-item class="item-group-properties" style=" margin-top: 24px;   ">
+		        <ion-label class="label-item-properties"><img src="assets/Images/home/icon_email.png" style="float:left;font-family: 'Lato', sans-serif;font-weight: 400;margin-right: 8px;"/>
+		        	<div class="headline-properties">{{aboutUsData.Contact}}</div>
+		    	</ion-label>
+		      </ion-item>
+
+    			
+
+    		
+    	</ion-list>
+	
+    	</ion-col>
+    </ion-row>
+      
+    </ion-list>
+
+
+
+    <ion-list class="item-space" *ngSwitchCase="'contact'" >
+    	<div *ngIf="getData.length==0">
+    		<ion-item class="item-properties">
+    			<div class="headline-item-properties">No Service Centre</div>
+    		</ion-item>
+    	</div>
+    	
+ 		<div style=" margin-top: 16px;   background: rgba(255, 255, 255, 0.10);padding:10px 8px;" *ngFor="let centreListValue of getData.ServiceCentres" >
+
+ 			
+
+
+			<ion-item class="item-properties">
+		
+				<h1 class="text-item">
+					{{centreListValue.ResourceName}}
+				</h1>
+			</ion-item>
+	      <ion-item class="item-properties">
+	        <ion-label class="label-properties" >
+	        	<img src="assets/Images/IconButton/@2x/button_location@2x.png" style="float:right;font-family: 'Lato', sans-serif;font-weight: 400;margin-left: 8px; margin-top: 12px;   height: 36px;width: 36px;" (click)="openLocation(centreListValue.Latitude, centreListValue.Longitude, centreListValue.ResourceName)"/>
+	        	<div class="headline-item-properties">{{centreListValue.Address}}</div>
+	    	</ion-label>
+	      </ion-item>
+
+	      <!-- <ion-item class="item-properties">
+	        <ion-label class="label-properties">
+	        <img src="assets/Images/IconButton/@2x/button_call@2x.png" style="float:right;font-family: 'Lato', sans-serif;font-weight: 400;margin-left: 8px; height: 36px;width: 36px;"/>
+	        	<div class="headline-item-properties">+65 1234 5678</div>
+	    	</ion-label>
+	      </ion-item> -->
+			<button class="button-properties" ion-button block (click)="BookAppointment(centreListValue.ResourceID, centreListValue.ResourceName, centreListValue.Address)">Check Available Slots</button>
+    	</div>
+
+    	<!-- <div style=" margin-top: 16px;   background: rgba(255, 255, 255, 0.10);padding: 10px 8px;">
+
+		<ion-item class="item-properties">
+		
+			<h1 class="text-item">
+				Bulkit Batok Center
+			</h1>
+		</ion-item>
+	      <ion-item class="item-properties">
+	        <ion-label class="label-properties" >
+	        	<img src="assets/Images/IconButton/@2x/button_location@2x.png" style="float:right;font-family: 'Lato', sans-serif;font-weight: 400;margin-left: 8px; margin-top: 12px;   height: 36px;width: 36px;"/>
+	        	<div class="headline-item-properties">1 Bulkit Batok Crescent #04-54/55 Wcega Plaza 658054</div>
+	    	</ion-label>
+	      </ion-item>
+
+	      <ion-item class="item-properties">
+	        <ion-label class="label-properties">
+	        <img src="assets/Images/IconButton/@2x/button_call@2x.png" style="float:right;font-family: 'Lato', sans-serif;font-weight: 400;margin-left: 8px; height: 36px;width: 36px;"/>
+	        	<div class="headline-item-properties">+65 1234 5678</div>
+	    	</ion-label>
+	      </ion-item>
+
+			<button class="button-properties" ion-button block (click)="BookAppointment()">Check Available Slots</button> 
+    	</div> -->
+
+    </ion-list>
+
+   
+  </div>
+</ion-content>
